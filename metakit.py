@@ -5,6 +5,7 @@ import webbrowser
 import socket
 import time
 
+import getpass
 import urllib
 import smtplib
 
@@ -146,7 +147,7 @@ def bombemail():
     try:
         print "\033[1;32m"
         gmail = raw_input("Email: ")
-        passwd = raw_input("Password: ")
+        passwd = getpass.getpass("Password: ")
         msg = raw_input("Message: ")
         to = raw_input("To: ")
 
